@@ -34,6 +34,15 @@
             font-size: 2.5rem;
         }
 
+        .header-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center
+        }
+
+        .header-block img{
+            border-radius:20px;
+        }
         .step {
             background: var(--card-bg);
             border-radius: 15px;
@@ -171,10 +180,10 @@ body::-webkit-scrollbar-track-piece:start {
     </style>
 </head>
 <body>
+    <div class="header-block">
     <h1>Как попасть в Jonix VIP</h1>
-    
     <img src="./banner.jpg" alt="">
-
+    </div>
     <div class="step">
         <a href="./reg.jpg" data-lightbox="steps">
             <img src="./reg.jpg" alt="Скриншот 1">
