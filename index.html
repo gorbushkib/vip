@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonix VIP - Инструкция</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <style>
+        :root {
+            --accent: #00ff9d;
+            --bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+        }
+
+        body {
+            background: var(--bg);
+            color: #fff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: var(--accent);
+            margin: 2.5rem 0;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .step {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2.5rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .step.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .step img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+            border: 2px solid #333;
+        }
+
+        .step img:hover {
+            transform: scale(1.02);
+            border-color: var(--accent);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin: 1.2rem 0;
+            color: #e0e0e0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+        }
+
+        a:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: currentColor;
+        }
+
+        b {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        i {
+            color: #888;
+            display: block;
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        #banner {
+            width: 100%;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .step {
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+
+        }
+
+        /* Кастомный скроллбар */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00FF9D;
+  border-radius: 8px;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 
+    inset 0 0 6px rgba(0, 255, 157, 0.4),
+    0 0 10px rgba(0, 255, 157, 0.2);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF9D;
+  box-shadow: 
+    inset 0 0 8px rgba(0, 255, 157, 0.6),
+    0 0 12px rgba(0, 255, 157, 0.4);
+}
+
+/* Для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00FF9D rgba(0, 0, 0, 0.8);
+}
+
+/* Дополнительные эффекты */
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+body::-webkit-scrollbar-track-piece:start {
+  background: linear-gradient(to right, #00FF9D 20%, rgba(0, 0, 0, 0) 0%);
+}
+
+        
+    </style>
+</head>
+<body>
+    <h1>Как попасть в Jonix VIP</h1>
+    
+    <img src="/banner.jpg" alt="">
+
+    <div class="step">
+        <a href="/reg.jpg" data-lightbox="steps">
+            <img src="/reg.jpg" alt="Скриншот 1">
+        </a>
+        <p>
+            Регистрируемся на сайте брокера <a href="https://bit.ly/JONIX100" target="_blank">по ссылке</a>
+            Для этого вводим электронную почту и придумываем пароль.
+        </p>
+        <i>Промокод <b>JONIX100</b> появляется в поле автоматически и удваевает Ваш первый депозит (Если сумма депозита от 50$)</i>
+    </div>
+
+    <div class="step">
+        <a href="/скрин 2.jpg" data-lightbox="steps">
+            <img src="скрин 2.jpg" alt="Скриншот 2">
+        </a>
+        <p>
+            После того как нажмёте "зарегистрироваться", пройдёте стандартную проверку на спам и попадёте в личный кабинет.
+        </p>
+    </div>
+
+    <div class="step">
+        <a href="/скриншот 3.jpg" data-lightbox="steps">
+            <img src="/скриншот 3.jpg" alt="Скриншот 3">
+        </a>
+        <p>
+            Вам необходимо будет пополнить счёт, <a href="https://bit.ly/3BZAU0r" target="_blank">по нашей инструкции</a>
+        </p>
+    </div>
+
+    <div class="step">
+        <a href="/скриншот 4.jpg" data-lightbox="steps">
+            <img src="/скриншот 4.jpg" alt="Скриншот 4">
+        </a>
+        <p>
+            После успешного пополнения счёта присылаете свой id пользователя и скриншот с балансом Реального счёта в <a href="https://t.me/Jonix_Support_Trading" target="_blank">Нашу поддержку</a>
+            <br>
+            Вот какой скриншот вы должны отправить в поддержку.
+            <a href="/скрин тг.jpg" data-lightbox="steps">
+                <img src="/скрин тг.jpg" alt="Скриншот 4">
+            </a>
+        </p>
+    </div>
+
+    <h2>Очень важно!</h2>
+
+    <div class="step">
+        <a href="/рс.jpg" data-lightbox="important">
+            <img src="/рс.jpg" alt="Скриншот 5">
+        </a>
+        <p>
+            Cчёт на скриншоте должен быть реальным. Перед тем как делать скриншот нажмите <b>Торговля</b> и сделайте пункт <b>"Быстрая торговля Реальный счёт"</b>. активным.
+            <br>
+            Таким образом в правом верхнем углу вы увидте баланс своего реального счёта, именно его и нужно отправлять в поддержку.
+        </p>
+    </div>
+
+    <div class="step">
+        <a href="/финиш.jpg" data-lightbox="important">
+            <img src="/финиш.jpg" alt="Скриншот 6">
+        </a>
+        <p>
+            Если Вы всё сделали верно, смело отправляйте заявку на вступление в <a href="https://t.me/+sSoJGxQvuAtmODY6" target="_blank"><b>VIP ЧАТ</b></a> и после проверки Вы получите кведомление.
+            <br>
+            <b>🚀 ВПЕРЁД!</b> 
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        // Анимация при скролле
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.step').forEach(step => {
+            observer.observe(step);
+        });
+
+        // Лайтбокс
+        lightbox.option({
+            'wrapAround': true,
+            'albumLabel': "Изображение %1 из %2",
+            'fadeDuration': 300
+        });
+    </script>
+</body>
+</html>
